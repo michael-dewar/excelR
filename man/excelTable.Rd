@@ -4,18 +4,44 @@
 \alias{excelTable}
 \title{Create excel table using jexcel library}
 \usage{
-excelTable(data = NULL, columns = NULL, colHeaders = NULL,
-  rowHeight = NULL, nestedHeaders = NULL, defaultColWidth = NULL,
-  minDimensions = NULL, columnSorting = TRUE, columnDrag = FALSE,
-  columnResize = TRUE, rowResize = FALSE, rowDrag = TRUE,
-  editable = TRUE, allowInsertRow = TRUE, allowInsertColumn = TRUE,
-  allowDeleteRow = TRUE, allowDeleteColumn = TRUE,
-  allowRenameColumn = TRUE, allowComments = FALSE, wordWrap = FALSE,
-  selectionCopy = TRUE, mergeCells = NULL, search = FALSE,
-  pagination = NULL, fullscreen = FALSE, lazyLoading = FALSE,
-  loadingSpin = FALSE, style = NULL, autoColTypes = TRUE,
-  showToolbar = FALSE, dateFormat = "DD/MM/YYYY", digits = 4,
-  autoWidth = TRUE, autoFill = FALSE, getSelectedData = FALSE, ...)
+excelTable(
+  data = NULL,
+  columns = NULL,
+  colHeaders = NULL,
+  rowHeight = NULL,
+  nestedHeaders = NULL,
+  defaultColWidth = NULL,
+  minDimensions = NULL,
+  columnSorting = TRUE,
+  columnDrag = FALSE,
+  columnResize = TRUE,
+  rowResize = FALSE,
+  rowDrag = TRUE,
+  editable = TRUE,
+  allowInsertRow = TRUE,
+  allowInsertColumn = TRUE,
+  allowDeleteRow = TRUE,
+  allowDeleteColumn = TRUE,
+  allowRenameColumn = TRUE,
+  allowComments = FALSE,
+  wordWrap = FALSE,
+  selectionCopy = TRUE,
+  mergeCells = NULL,
+  search = FALSE,
+  pagination = NULL,
+  fullscreen = FALSE,
+  lazyLoading = FALSE,
+  loadingSpin = FALSE,
+  style = NULL,
+  autoColTypes = TRUE,
+  showToolbar = FALSE,
+  dateFormat = "DD/MM/YYYY",
+  digits = 4,
+  autoWidth = TRUE,
+  autoFill = FALSE,
+  getSelectedData = FALSE,
+  ...
+)
 }
 \arguments{
 \item{data}{a data object, can either be dataframe or a matrix.}

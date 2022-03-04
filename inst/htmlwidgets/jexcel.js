@@ -276,6 +276,24 @@
       
       
       if (HTMLWidgets.shinyMode) {
+
+        // This function is used to hide the index column in the table
+        Shiny.addCustomMessageHandler("excelR:hideIndex", function(message) {
+          
+          var el = document.getElementById(message[0]);
+          if (el) {
+            el.excel.hideIndex();
+          }
+        });
+
+        // This function is used to show the index column in the table
+        Shiny.addCustomMessageHandler("excelR:showIndex", function(message) {
+          
+          var el = document.getElementById(message[0]);
+          if (el) {
+            el.excel.showIndex();
+          }
+        });
         
         // This function is used to set comments in the table
         Shiny.addCustomMessageHandler("excelR:setComments", function(message) {

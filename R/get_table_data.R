@@ -12,14 +12,15 @@
 #'              excelOutput("table", height = 175)),
 #'          server = function(input, output, session) {
 #'              output$table <- renderExcel(excelTable(data = head(iris)))
-#'          
+#'
 #'              observeEvent(input$get,{getTableData("table")})
-#' 
+#'
 #'              observeEvent(input$table,{
 #'                  output$fetchedData <- renderTable(excel_to_R(input$table))
 #'              })
 #' })
-#' 
+#' }
+#'
 getTableData <- function(tableId) {
   session <- shiny::getDefaultReactiveDomain()
   session$sendCustomMessage("excelR:getTableData", message=list(tableId))
