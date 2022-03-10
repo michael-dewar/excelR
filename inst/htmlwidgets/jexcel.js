@@ -162,7 +162,11 @@
           excel.table.setAttribute("style", "width: 100%; height: 100%; white-space: normal;")
           container.getElementsByClassName("jexcel_content")[0].setAttribute("style", "height:100%")
         }
-        
+
+        if(hideIndex){
+            excel.table.classList.add('jexcel_hidden_index');
+          }
+
         container.excel = excel;
 
         if (HTMLWidgets.shinyMode && excel) {
