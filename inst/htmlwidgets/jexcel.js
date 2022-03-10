@@ -15,6 +15,7 @@
           var dateFormat = params.hasOwnProperty("dateFormat")? params.dateFormat: "DD/MM/YYYY";
           var autoWidth = params.hasOwnProperty("autoWidth")? params.autoWidth: true;
           var autoFill = params.hasOwnProperty("autoFill")? params.autoFill: false;
+          var hideIndex = params.hasOwnProperty("hideIndex")? params.hideIndex: true;
           var getSelectedData = params.hasOwnProperty("getSelectedData")? params.getSelectedData: false
           var imageColIndex = undefined;
           var otherParams = {};
@@ -129,7 +130,12 @@
             excel.table.setAttribute("style", "width: 100%; height: 100%; white-space: normal;")
             container.getElementsByClassName("jexcel_content")[0].setAttribute("style", "height:100%")
           }
-          
+
+          if(hideIndex){
+            excel.table.classList.add('jexcel_hidden_index');
+          }
+
+
           container.excel = excel;
           
           return;

@@ -38,6 +38,7 @@
 #' @param pagination a numeric value indicating number of rows in a single page. If the data does not fit in a
 #' single page pagination is enabled.
 #' @param fullscreen a boolean value indicating if the table should be fullscreen. By default it is set to false.
+#' @param hideIndex a boolean value indicating if the table should hide the index (row number) column. By default it is set to false.
 #' @param lazyLoading a boolean value indicating if lazy loading should be enabled. By default it is set to false.
 #' @param loadingSpin a boolean value indicating if loading spinner should be enabled. By default it is set to false.
 #' @param style a named list to specify style for each cell. The name should be the cell address and the value should be
@@ -85,6 +86,7 @@ excelTable <-
            search = FALSE,
            pagination = NULL,
            fullscreen = FALSE,
+           hideIndex = FALSE,
            lazyLoading = FALSE,
            loadingSpin = FALSE,
            style = NULL,
@@ -337,6 +339,7 @@ excelTable <-
       "selectionCopy",
       "search",
       "fullscreen",
+      "hideIndex",
       "lazyLoading",
       "loadingSpin",
       "showToolbar",
