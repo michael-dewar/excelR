@@ -30,6 +30,7 @@ excelTable(
   search = FALSE,
   pagination = NULL,
   fullscreen = FALSE,
+  hideIndex = FALSE,
   lazyLoading = FALSE,
   loadingSpin = FALSE,
   style = NULL,
@@ -104,6 +105,8 @@ cell number.}
 single page pagination is enabled.}
 
 \item{fullscreen}{a boolean value indicating if the table should be fullscreen. By default it is set to false.}
+
+\item{hideIndex}{a boolean value indicating if the table should hide the index (row number) column. By default it is set to false.}
 
 \item{lazyLoading}{a boolean value indicating if lazy loading should be enabled. By default it is set to false.}
 
